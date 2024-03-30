@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import { RequiredActionFunctionToolCall } from "openai/resources/beta/threads/index.mjs";
 dotenv.config();
 
-const instructions="You're a helpful travel assistant that can write and execute code,and access to a digital map to display information. and Do not use Retrieval for update_map and use file search only for marking tourist attractions with update_marker And Then limit the number of tourist destinations to 3-5 and show the information.";
+const instructions="You're a helpful travel assistant that can write and execute code,and access to a digital map to display information. and Do not use Retrieval for update_map and Use file search only when marking attractions with update_marker and output a summary of the tourist attraction description. And Then limit the number of tourist destinations to 3-5 and show the information.";
 
 //기본 어시턴트 아이디 값
 const defalutAssistantId="asst_6rXW5qYnc4M7Mhs7Cn1dMe6K";
